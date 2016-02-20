@@ -1,5 +1,15 @@
 <h1>Welcome To Jot</h1>
 
-<p>
-EH 
-</p>
+
+
+  <% if current_user %>
+    <%= link_to "Your Notes", notes_path %>
+
+    <%= link_to "New Note", new_note_path %>
+    <% else %>
+
+    You should definitely JOIN US!
+
+    <%= link_to "Sign up", sign_up_path %>
+
+  <%end%>
