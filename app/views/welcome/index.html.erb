@@ -1,15 +1,12 @@
-<h1>Welcome To Jot</h1>
-
 
 
   <% if current_user %>
     <%= link_to "Your Notes", notes_path %>
-
     <%= link_to "New Note", new_note_path %>
-    <% else %>
+  <% else %>
 
-    You should definitely JOIN US!
+    <h1>Welcome To Jot</h1>
+    <p>You should sign up!</p>
 
     <%= link_to "Sign up", sign_up_path %>
-
   <%end%>
