@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem "bcrypt-ruby", :require => "bcrypt"
+gem 'bootstrap', '~> 4.0.0.alpha3'
+
 
 group :development, :test do
   gem 'byebug'
@@ -20,4 +22,8 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
 end
