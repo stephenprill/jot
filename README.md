@@ -1,4 +1,4 @@
-== Jot
+# Jot
 
 ## Setup
 
